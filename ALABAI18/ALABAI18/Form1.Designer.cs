@@ -30,14 +30,17 @@
         {
             button1 = new Button();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(398, 596);
+            button1.Location = new Point(215, 506);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(141, 89);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -45,23 +48,44 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(68, 33);
+            pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(802, 451);
+            pictureBox1.Size = new Size(700, 431);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Location = new Point(803, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(465, 368);
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(1060, 512);
+            button2.Name = "button2";
+            button2.Size = new Size(142, 77);
+            button2.TabIndex = 3;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(941, 671);
+            ClientSize = new Size(1326, 628);
+            Controls.Add(button2);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -69,5 +93,7 @@
 
         private Button button1;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Button button2;
     }
 }
